@@ -69,9 +69,7 @@ class MasjidBoxCoordinator(DataUpdateCoordinator[dict[str, Any]]):
             tzinfo=timezone.utc,
         )
         begin = midnight_utc.isoformat(timespec="milliseconds")
-        # The MasjidBox API expects an encoded begin parameter (see cURL example),
-        # otherwise the '+' and ':' characters can break parsing and result in
-        # 'Invalid date' values in the timetable.
+        
         encoded_begin = quote(begin, safe="")
 
         url = API_URL.format(
