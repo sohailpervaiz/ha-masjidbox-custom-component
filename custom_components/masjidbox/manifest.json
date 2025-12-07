@@ -1,0 +1,15 @@
+{
+  "domain": "masjidbox",
+  "name": "MasjidBox Prayer Times",
+  "version": "0.0.1",
+  "documentation": "https://example.com/masjidbox-homeassistant",
+  "requirements": [],
+  "codeowners": [
+    "@yourname"
+  ],
+  "config_flow": true,
+  "iot_class": "cloud_polling",
+  "loggers": [
+    "custom_components.masjidbox"
+  ]
+}

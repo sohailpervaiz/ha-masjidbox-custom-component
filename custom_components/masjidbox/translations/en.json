@@ -1,0 +1,20 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "MasjidBox Prayer Times",
+        "description": "Configure MasjidBox mosque settings.",
+        "data": {
+          "slug": "Mosque slug (e.g. bathgatemosque)",
+          "apikey": "MasjidBox API key",
+          "days": "Number of days to fetch (default 7)"
+        }
+      }
+    },
+    "error": {
+      "slug_required": "Mosque slug is required.",
+      "apikey_required": "API key is required.",
+      "already_configured": "This mosque is already configured."
+    }
+  }
+}
